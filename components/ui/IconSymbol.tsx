@@ -30,7 +30,7 @@ export function IconSymbol({
   size = 24,
   color,
   style,
-}: {
+}: {  
   name: IconSymbolName;
   size?: number;
   color: string | OpaqueColorValue;
