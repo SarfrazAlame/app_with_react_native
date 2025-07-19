@@ -14,10 +14,10 @@ const app = () => {
       >
         <Text style={styles.title}>Coffee Shop</Text>
 
-        <Link href={"/contact"} style={{marginHorizontal:'auto'}} asChild>
+        <Link href={"/contact"} style={{ marginHorizontal: 'auto' }} asChild>
           <Pressable style={styles.button}>
             <Text style={styles.buttonText}>
-              Contract
+              Contract Us
             </Text>
           </Pressable>
         </Link>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(71, 71, 71, 0.5)',
     marginBottom: 60
   },
-  
+
   link: {
     color: "zinc",
     fontSize: 40,
@@ -59,11 +59,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(71, 71, 71, 0.5)',
     padding: 4
   },
-  button:{
-    height:60,
-    borderRadius:20,
-    backgroundColor:'rgba(167, 167, 167, 0.75)',
-    padding:6
+  button: {
+    height: 60,
+    borderRadius: 20,
+    backgroundColor: 'rgba(167, 167, 167, 0.75)',
+    padding: 6
   },
   buttonText: {
     color: "zinc",
@@ -71,6 +71,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: 'center',
     padding: 4,
-    marginVertical:'auto'
+    marginVertical: 'auto'
   },
 })
