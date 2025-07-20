@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ImageBackground, Pressable } from 'react-native
 import React from 'react'
 import { Link } from 'expo-router';
 
-import iceCoffeeImg from "@/assets/images/icon.png";
+import iceCoffeeImg from "@/assets/images/coffee.jpg";
 
 const app = () => {
   return (
@@ -18,6 +18,13 @@ const app = () => {
           <Pressable style={styles.button}>
             <Text style={styles.buttonText}>
               Contract Us
+            </Text>
+          </Pressable>
+        </Link>
+        <Link href={'/menu'} style={{ marginHorizontal: 'auto', marginTop:4 }} asChild>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>
+              Our Menu
             </Text>
           </Pressable>
         </Link>
@@ -42,16 +49,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   title: {
-    color: "zinc",
+    color: "white",
     fontSize: 40,
     fontWeight: "bold",
     textAlign: 'center',
-    backgroundColor: 'rgba(71, 71, 71, 0.5)',
+    backgroundColor: 'rgba(16, 15, 15, 0.5)',
     marginBottom: 60
   },
 
   link: {
-    color: "zinc",
+    color: "white",
     fontSize: 40,
     fontWeight: "bold",
     textAlign: 'center',
@@ -61,12 +68,14 @@ const styles = StyleSheet.create({
   },
   button: {
     height: 60,
+    width:150,
     borderRadius: 20,
-    backgroundColor: 'rgba(167, 167, 167, 0.75)',
-    padding: 6
+    backgroundColor: 'rgba(17, 16, 16, 0.75)',
+    padding: 6,
+    marginBottom:50
   },
   buttonText: {
-    color: "zinc",
+    color: "white",
     fontSize: 16,
     fontWeight: "bold",
     textAlign: 'center',
